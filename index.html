@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self';
+    style-src 'self';
+    connect-src 'self' https://auth.wonderland.oravec.io;
+    img-src 'self' data: https:;
+    font-src 'self';
+  ">
+  <meta name="description" content="Wonderland - AI Agent Dashboard">
+  <meta name="author" content="Stephen Oravec">
+  <title>Login | Wonderland</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div id="login-wrapper">
+    <div class="login-box">
+      <h1>🎩 Wonderland</h1>
+      <p>Sign in to access your AI agents</p>
+      <button id="loginButton">Sign in with Google</button>
+      <p id="status"></p>
+    </div>
+  </div>
+  <script src="/js/login.js"></script>
+</body>
+</html>
